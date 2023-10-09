@@ -7,11 +7,11 @@ body, h1, h2, h3, p, ul, li {
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #173B49;
 }
 
 header {
-    background-color: #292b2c;
+    background-color: #141616;
     color: white;
     padding: 10px 0;
 }
@@ -40,11 +40,11 @@ a {
 }
 
 a:hover {
-    color: #428bca;
+    color: #5BABB8;
 }
 
 .active {
-    background-color: #428bca;
+    background-color: #5BABB8;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -66,8 +66,10 @@ a:hover {
     margin: 20px auto;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #A9A9A9;
     padding: 20px;
+    border-style: ridge;
+    border-color: #173B49;
 }
 
 .profile {
@@ -84,26 +86,107 @@ a:hover {
     text-align: center; 
     padding-left: 20px;
 }
+.details ul{
+    list-style-type: none;
+}
 
 /* Projects Page */
 #projects {
     max-width: 80%; 
     margin: 20px auto;
-    background-color: white;
+    background-color: #A9A9A9;
     padding: 20px;
+    border-style: ridge;
+    border-color: #173B49;
+}
+
+#projects ul{
+    padding-left: 20px;
+    list-style-type: none;
 }
 
 .project {
-    border: 1px solid #ccc;
+    border: 2px inset #173B49;
     padding: 10px;
     margin: 10px 0;
 }
 
 .project h2 a {
     text-decoration: none;
-    color: #428bca;
+    color: #2E88AE;
 }
 
 .project h2 a:hover {
     text-decoration: underline;
+}
+
+/* Project specific pages */
+#project-details {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #A9A9A9;
+    padding: 20px;
+    border-style: ridge;
+    border-color: #173B49;
+}
+
+#project-details a{
+        text-decoration: none;
+        color: #2E88AE;
+}
+#project-details a:hover{
+    text-decoration: underline;
+}
+
+#project-details ul{
+    padding-left:20px;
+}
+
+.project-header {
+    text-align: left;
+}
+
+.project-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-content {
+    text-align: left;
+}
+
+.project-content h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.project-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.project-links h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.project-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-links li {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
