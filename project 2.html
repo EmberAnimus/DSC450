@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name - Your Portfolio</title>
+    <title>Housing Crisis Analysis</title>
     <link rel="stylesheet" href="site-resources/styles.css">
 </head>
 <body>
@@ -31,21 +31,55 @@
 
     <section id="project-details">
         <div class="project-header">
-            <h1>Project Name</h1>
-            <p>Project Description: Write a brief overview of the project here.</p>
-            <p>Technologies Used: List the technologies, tools, and languages used for the project.</p>
+            <h1>Analyzing the Impact of Inflation on Family Income and House Prices</h1>
+            <h3>Project Description:</h3>
+            <p> 
+                This project aims to analyze the effects of inflation on family income and house sale prices in the United States. The data used in this analysis is sourced
+                from the FRED economic database. The dataset includes information on the median sales price of houses, mean family income, and inflation rate for the US.
+                Our primary research questions are focused on understanding how inflation influences the affordability of housing for families. 
+            </p>
+            <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Python
+                        <ul>
+                            <li>Pandas for ingesting and organizing data</li>
+                            <li>SKLearn for Modeling and Metrics</li>
+                        </ul>
+                    </li>
+                    <li>Powerpoint for presentation</li>
+                    <li>Teams for communicating</li>
+                </ul>
         </div>
         
         <div class="project-content">
             <h2>Project Details</h2>
-            <p>
-                Provide more detailed information about the project here.
-                You can describe its purpose, features, challenges, and any notable achievements.
-            </p>
-            <h2>Project Screenshots</h2>
-            <img src="project-screenshot1.jpg" alt="Project Screenshot 1">
-            <img src="project-screenshot2.jpg" alt="Project Screenshot 2">
-            <!-- Add more screenshots as needed -->
+            <br>
+            <h3>Introduction:</h3>
+                <p>
+                    This report focuses on understanding how inflation affects family income and the affordability of houses. 
+                    We will use data from the FRED Economic Data Database provided by the Federal Reserve Bank of St. Louis. We focused on three important datasets: 
+                    Median Sales Price of Houses Sold in the US, Mean Family Income in the US, and Consumer Price Inflation in the US. 
+                    The analysis will span from 1953 to the present, and the Median Sales Price of Houses data is collected quarterly. 
+                </p>
+
+            <h3>Data Collection and Challenges:</h3>
+                <p>
+                    To investigate the questions we had about the research we started by merging the three datasets we used into a single unified dataset. 
+                    This let us easily compare the data and see how the variables relate to each other. Additionally this enabled us to more easily slice the data for a model.
+                    Some of the initial challenges with the data stemmed from both the reporting rate of the data as well as the limited quantity. In total we only had
+                    around 60 datapoints to work with, which makes it rather difficult to account for a variety of extneral factors, but also limits model accuracy.
+                    Despite these limitations, through linear regression we were able to achieve some decent results.
+                </p>
+            <h3>Results: </h3>
+                <p>
+                    Our model performed quite admirably with the limited resources we had available. The model yielded an R^2 score of 0.58, indicating that whlie the model
+                    is able to explain more than half of the variance with inflation and income alone, there are still other significant factors that are not accounted for.
+                    Additionally, the Mean Absolute Error (MAE) was $29,308, for the typical house prices this isn't a significant amount of money, but is still more than what 
+                    is preferrable. 
+                    This means that while we were able to shed light on how inflation affects home affordability for familys, there are still other factors at play that needs 
+                    to be accounted for. If we are able to properly account for these factors, we could create a model that is able to draw a very deep understanding the evolving
+                    relationship between inflation, family income, and housing affordability.
+                </p>
         </div>
         
         <div class="project-links">
@@ -53,6 +87,8 @@
             <ul>
                 <li><a href="https://github.com/kevinqrnold/DSC450-Applied-Data-Science" target="_blank">Kevin Arnold Repository</a></li>
                 <li><a href="https://github.com/brittlaur/DSC450/tree/main" target="_blank">Brittany Roberts Repository</a></li>
+                <li><a href="https://github.com/kevinqrnold/DSC450-Applied-Data-Science/blob/740d1aa6e50cf6ec03f546312384bca4743aa0a3/Project%202%20Report.pdf"
+                     target="_blank">Project Report</a></li>
             </ul>
         </div>
     </section>

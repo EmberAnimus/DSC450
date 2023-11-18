@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name - Your Portfolio</title>
+    <title>SBA Data Analysis</title>
     <link rel="stylesheet" href="site-resources/styles.css">
 </head>
 <body>
@@ -38,14 +38,32 @@
         
         <div class="project-content">
             <h2>Project Details</h2>
-            <p>
-                Provide more detailed information about the project here.
-                You can describe its purpose, features, challenges, and any notable achievements.
-            </p>
-            <h2>Project Screenshots</h2>
-            <img src="project-screenshot1.jpg" alt="Project Screenshot 1">
-            <img src="project-screenshot2.jpg" alt="Project Screenshot 2">
-            <!-- Add more screenshots as needed -->
+            <br />
+            <h3>Introduction:</h3>
+                <p>
+                    The project focuses on the analysis of hte United States SBA 7(a) loan data, extracted from the data provided by the United States SBA data portal. 
+                    The objective of the project is to analyize the borrower characteristics, risk factors, and lending practices that lend to loan defaults or successfull payoffs.
+                    By analyzing this information we hope to be able to improve loan default predictions, and in turn improve the SBA's ability to tailor the loan terms to the borrower.
+                </p>
+
+            <h3>Data Collection and Challenges:</h3>
+                <p>
+                    The data encompasses data on all loans approved by the SBA and is divided into files based on the decade the loan fell in. This data is updated quartarly, with the
+                    most recent update, at the time of this project, being September 30th, 2023. This data was extracted from the SBA data portal, which was provided in the form of CSV files.
+                    Once we combined the data from all the CSV files, we pruned out the unneeded data, and cleaned what remained. 
+
+                    From here we started some preliminary modeling of the data, and found that the data was rather imbalanced. This meant that while the model achieved high accuracy,
+                    it fell short int terms of recall and precision. To combat this we used the SMOTE package to oversample the minority class and undersample the majority class. 
+                    This helped to improve the recall and precision of the model, but the accuracy fell as a result. When diving deeper, we found that while we could continue improving 
+                    the modeling, it wasn't a worthwhile pursuit at this time.
+                </p>
+            <h3>Results: </h3>
+                <p>
+                    Ultimately the results were rather lackluster. While the exploratory analysis and collection of data proved like this could be a promising endeavor,
+                    the data didn't show correlation. This could be due to a variety of factors, ranging from the selected variables to the amount of missing data, but it is hard to tell.
+                    While we could continue to improve the modeling, it wouldn't be beneficial due to lack of gainful insights to be derived from the effort. I think that with some more
+                    time, effort, and data processing we could start to see some correlations and promising results; and hopefully find some actionable insights.
+                </p>
         </div>
         
         <div class="project-links">
